@@ -1,9 +1,11 @@
+# Let's update the README.md content with the new project name "ConnectSphere" and the GitHub URL provided by the user
 
+readme_content_updated = """
 # ConnectSphere
 
 ## Introduction
 
-This repository hosts the backend code for a social media platform. It is designed with Node.js and Express and uses MongoDB as a database. The system is robust and allows for user interactions such as posting, commenting, and reacting to content.
+This repository hosts the backend code for ConnectSphere, a social media platform. It is designed with Node.js and Express and uses MongoDB as a database. The system is robust and allows for user interactions such as posting, commenting, and reacting to content.
 
 ## Features
 
@@ -32,8 +34,8 @@ This repository hosts the backend code for a social media platform. It is design
 Clone the repository and install the dependencies:
 
 \```bash
-git clone https://github.com/yourusername/social-media-exam.git
-cd social-media-exam
+git clone https://github.com/AbdeIkader/ConnectSphere.git
+cd ConnectSphere
 npm install
 \```
 
@@ -98,3 +100,11 @@ Contributions are welcome! Please fork the repository and open a pull request wi
 ## License
 
 This project is open-sourced under the ISC License.
+"""
+
+# Write the updated content to a new README.md file
+readme_file_path_updated = '/mnt/data/README.md'
+with open(readme_file_path_updated, 'w') as file:
+    file.write(readme_content_updated)
+
+readme_file_path_updated
