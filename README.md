@@ -1,6 +1,3 @@
-# Let's update the README.md content with the new project name "ConnectSphere" and the GitHub URL provided by the user
-
-readme_content_updated = """
 # ConnectSphere
 
 ## Introduction
