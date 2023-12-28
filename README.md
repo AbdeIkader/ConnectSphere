@@ -26,6 +26,54 @@ The project structure emphasizes modularity and separation of concerns, ensuring
 - **Multer**: For handling file uploads in Node.js.
 - **Dotenv**: For managing environment variables.
 
+## Configuration
+
+### .env File
+Create a `.env` file in the root directory with the following configurations (replace with your actual data):
+
+```
+PORT = 3000
+MONGO_URL = mongodb://127.0.0.1:27017/Social-media
+email = bigabdo69@gmail.com
+emailpass = tschkvyrbpuawlru
+JWT_KEY = JR
+MODE = dev
+BASE_URL = http://localhost:3000/
+```
+
+## API Endpoints
+
+### User Management
+
+- `POST /user/sign-up` - Registers a new user.
+- `GET /user/confirmEmail/:token` - Confirms the user's email.
+- `PATCH /user/forgetPassword` - Initiates a password reset process.
+- `PATCH /user/resetPassword/:token` - Allows setting a new password.
+- `POST /user/sign-in` - Authenticates a user.
+- `GET /user/getAllUsers` - Retrieves a list of all users.
+- `PUT /user/updateUser` - Updates user information.
+- `PATCH /user/logout` - Logs out the user.
+
+### Post Management
+
+- `POST /post/createPost` - Creates a new post.
+- `GET /post/getAllPosts` - Retrieves all posts.
+- `GET /post/getAllPostsForSpecificUser` - Retrieves all posts for a specific user.
+- `GET /post/getDetailsOfSpecificPost/:_id` - Retrieves details for a specific post.
+- `PUT /post/updateSpecifcPost/:_id` - Updates a specific post.
+- `DELETE /post/deleteSpecificPost/:_id` - Deletes a specific post.
+- `PATCH /post/addLikeToPost/:_id` - Adds a like to a post.
+- `PATCH /post/addDisLikeToPost/:_id` - Adds a dislike to a post.
+
+### Comment Management
+
+- `POST /comment/createComment/:postId` - Adds a comment to a post.
+- `PATCH /comment/updateComment/:commentId` - Updates a comment.
+- `DELETE /comment/deleteComment/:commentId` - Deletes a comment.
+- `PATCH /comment/addLikeToComment/:commentId` - Adds a like to a comment.
+- `PATCH /comment/addDisLikeToComment/:commentId` - Adds a dislike to a comment.
+- `POST /comment/addReplyToComment/:commentId` - Adds a reply to a comment.
+
 ## Project Structure
 
 The project follows a structured approach, organizing the codebase into logical modules:
