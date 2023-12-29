@@ -34,8 +34,8 @@ Create a `.env` file in the root directory with the following configurations (re
 ```
 PORT = 3000
 MONGO_URL = mongodb://127.0.0.1:27017/Social-media
-email = bigabdo69@gmail.com
-emailpass = tschkvyrbpuawlru
+email = your-email
+emailpass = your-pass
 JWT_KEY = JR
 MODE = dev
 BASE_URL = http://localhost:3000/
